@@ -3,6 +3,8 @@ import { NavLink } from "react-router-dom";
 import { BiHomeAlt } from "react-icons/bi";
 import { AiOutlineShopping } from "react-icons/ai";
 import { FiShoppingCart } from "react-icons/fi";
+import { TbShoppingCartX } from "react-icons/tb"
+import { TbShoppingCartPlus } from "react-icons/tb";
 
 const NavbarLeft = () => {
   const [isHovered, setIsHovered] = useState(false);
@@ -29,22 +31,38 @@ const NavbarLeft = () => {
       <ul className="flex flex-col items-center text-white text-md  cursor-pointer gap-6">
         {/* Home */}
         <li>
-          <NavLink className="flex flex-col items-center" to="/">
-            <BiHomeAlt className="text-2xl" />
+          <NavLink className="flex flex-col items-center cursor-pointer" to="/">
+            <BiHomeAlt className="text-3xl" />
             {isHovered && <span>Home</span>}
           </NavLink>
         </li>
         {/* Productos */}
         <li>
           <NavLink className="flex flex-col items-center" to="/productos">
-            <FiShoppingCart className="text-2xl" />
+            <FiShoppingCart className="text-3xl" />
             {isHovered && <span>Productos</span>}
           </NavLink>
         </li>
-        {/* categotias */}
+        {/* Agregar Productos */}
+        <li>
+          <NavLink className="flex flex-col items-center" to="/agregarProductos">
+            <TbShoppingCartPlus className="text-3xl" />
+            {isHovered && <span>Agreagar</span>}
+            {isHovered && <span>Productos</span>}
+          </NavLink>
+        </li>
+        {/* EliminarProductos */}
+        <li>
+          <NavLink className="flex flex-col items-center" to="/eliminarProductos">
+            <TbShoppingCartX className="text-3xl" />
+            {isHovered && <span>Eliminar</span>}
+            {isHovered && <span>Productos</span>}
+          </NavLink>
+        </li>
+        {/* categorias */}
         <li>
           <NavLink className="flex flex-col items-center" to="/categorias">
-            <AiOutlineShopping className="text-2xl" />
+            <AiOutlineShopping className="text-3xl" />
             {isHovered && <span>Categorias</span>}
           </NavLink>
         </li>

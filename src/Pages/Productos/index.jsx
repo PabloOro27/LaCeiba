@@ -17,7 +17,9 @@ const Productos = () => {
     return (
         <div className='flex flex-col items-center w-[825px] mt-3'>
             <span className='text-2xl font-bold text-lime-400 mb-5'>Productos</span>
-            <DataTable data={data} columns={columns}/>
+            <div className='mb-10'>
+                <DataTable data={data} columns={columns} />
+            </div>
         </div>
     );
 };
