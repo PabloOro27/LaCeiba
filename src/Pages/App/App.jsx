@@ -11,6 +11,7 @@ import Home from '../Home'
 import Productos from '../Productos';
 import Categorias from '../Categorias';
 import EliminarProductos from '../../Components/EliminarProductos';
+import AgregarProducto from '../../Components/AgregarProducto';
 import NotFound from '../../Components/NotFound'
 import './App.css' // estilo de la pagina
 // contexto general de la aplicacion
@@ -21,6 +22,7 @@ const AppRoutes = () => {
     { path: "/", element: <Home />},
     { path: "/productos", element: <Productos />},
     { path: "/categorias", element: <Categorias />},
+    { path: "/agregarProductos", element: <AgregarProducto />},
     { path: "/eliminarProductos", element: <EliminarProductos />},
     { path: "*", element: <NotFound /> },	
   ]);
