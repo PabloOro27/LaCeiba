@@ -23,7 +23,7 @@ const NavbarLeft = () => {
 
   return (
     <div
-      className="bg-lime-500 w-10 h-screen absolute left-0 top-[80px] px-2 py-10 hover:w-24 transition-all duration-500"
+      className="bg-lime-500 w-10 h-screen absolute left-0 top-[80px] px-2 py-6 hover:w-24 transition-all duration-500"
       style={estilo}
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}

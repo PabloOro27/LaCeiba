@@ -19,7 +19,6 @@ export const GeneralContextProvider = ({ children }) => {
           .then((response) => response.json())
           .then((data) => setProductos(data));
     }, []);
-    console.log(productos);
 // -----------------------------------------------------------------------------------------------
     return (
         <GeneralContext.Provider 
